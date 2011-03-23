@@ -1,0 +1,1 @@
+mvn -U clean eclipse:eclipse -DdownloadSources=true

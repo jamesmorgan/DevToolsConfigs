@@ -502,3 +502,25 @@ git status
 exit
 cd ~/.ssh
 pwd
+cd DevToolsConfigs/
+git add . 
+git push -u origin master
+git config core.autocrlf false
+git add --all
+git status
+git commit -m
+git commit 
+git push -u origin master
+git co
+git st
+git add
+git commit -a
+git status
+exit
+cd wkspace
+wkspace
+exit
+explorer ~/.bash_profile
+cd ~
+explorer .bash_profile
+exit

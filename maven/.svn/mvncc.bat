@@ -1,0 +1,1 @@
+mvn clean -Pclover clover2:instrument clover2:aggregate clover2:clover

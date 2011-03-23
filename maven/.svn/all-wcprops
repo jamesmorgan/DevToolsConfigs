@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/internal/!svn/ver/25524/scripts/trunk/maven
+END
+mvnp.bat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/internal/!svn/ver/21600/scripts/trunk/maven/mvnp.bat
+END
+mvncp.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/internal/!svn/ver/547/scripts/trunk/maven/mvncp.bat
+END
+mvns.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/internal/!svn/ver/2289/scripts/trunk/maven/mvns.bat
+END
+mvnt.bat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/internal/!svn/ver/20167/scripts/trunk/maven/mvnt.bat
+END
+upload.bat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/internal/!svn/ver/20167/scripts/trunk/maven/upload.bat
+END
+mvncc.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/internal/!svn/ver/547/scripts/trunk/maven/mvncc.bat
+END
+mvncs.bat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/internal/!svn/ver/2289/scripts/trunk/maven/mvncs.bat
+END
+mvnf.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/internal/!svn/ver/8758/scripts/trunk/maven/mvnf.bat
+END
+mvncsd.ps1
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/internal/!svn/ver/21898/scripts/trunk/maven/mvncsd.ps1
+END
+mvnct.bat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/internal/!svn/ver/10572/scripts/trunk/maven/mvnct.bat
+END
+mvncd.bat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/internal/!svn/ver/25524/scripts/trunk/maven/mvncd.bat
+END
+mvnce.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/internal/!svn/ver/547/scripts/trunk/maven/mvnce.bat
+END
