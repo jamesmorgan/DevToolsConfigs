@@ -524,3 +524,39 @@ explorer ~/.bash_profile
 cd ~
 explorer .bash_profile
 exit
+cd DevToolsConfigs/
+git commit -all
+git commit --all
+git push -u origin master
+exit
+explorer ~/.bash_profile
+cd DevToolsConfigs/
+git add --all
+git commit --all
+exit
+cd ENG-Telephony/
+mvncd
+mvncd.bat 
+exit
+cd ~/.bach_progfile
+explorer ~/.bash_progfile
+explorer ~/.bash_profile
+exit
+vim
+vi
+gvim
+vim
+vi
+echo I'm a shiny happy shell
+;
+
+
+echo I'm a shiny happy shell
+;
+
+
+exit
+logout
+exit
+logout
+exit

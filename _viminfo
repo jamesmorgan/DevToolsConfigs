@@ -59,19 +59,19 @@ $
 	!
 
 # File marks:
-'0  1  0  C:\dev\Console2\%1
-'1  1  0  C:\Program Files (x86)\Vim\vim73\doc\help.txt
-'2  1  39  c:\workspaces\james.morgan\DevToolsConfigs\.git\COMMIT_EDITMSG
+'0  1  28  c:\workspaces\james.morgan\DevToolsConfigs\.git\COMMIT_EDITMSG
+'1  1  0  C:\dev\Console2\%1
+'2  1  0  C:\Program Files (x86)\Vim\vim73\doc\help.txt
 '3  1  0  X:\.gitconfig
 '4  1  5  ~\.ssh\known_hosts
 '5  41  46  C:\workspaces\james.morgan\DiallerControls\js\ultra_dialler.js
 '6  41  46  C:\workspaces\james.morgan\DiallerControls\js\ultra_dialler.js
 
 # Jumplist (newest first):
+-'  1  28  c:\workspaces\james.morgan\DevToolsConfigs\.git\COMMIT_EDITMSG
 -'  1  0  C:\dev\Console2\%1
 -'  1  0  C:\Program Files (x86)\Vim\vim73\doc\help.txt
 -'  1  0  C:\dev\Console2\%V
--'  1  39  c:\workspaces\james.morgan\DevToolsConfigs\.git\COMMIT_EDITMSG
 -'  1  0  X:\.gitconfig
 -'  1  5  ~\.ssh\known_hosts
 -'  41  46  C:\workspaces\james.morgan\DiallerControls\js\ultra_dialler.js
@@ -168,6 +168,12 @@ $
 
 # History of marks within files (newest to oldest):
 
+> c:\workspaces\james.morgan\DevToolsConfigs\.git\COMMIT_EDITMSG
+	"	1	28
+	^	1	29
+	.	1	28
+	+	1	28
+
 > C:\dev\Console2\%1
 	"	1	0
 
@@ -176,12 +182,6 @@ $
 
 > C:\Program Files (x86)\Vim\vim73\doc\help.txt
 	"	1	0
-
-> c:\workspaces\james.morgan\DevToolsConfigs\.git\COMMIT_EDITMSG
-	"	1	39
-	^	1	40
-	.	1	39
-	+	1	39
 
 > X:\.gitconfig
 	"	1	0

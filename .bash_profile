@@ -36,19 +36,6 @@ alias ll='ls -lha --color=always'
 alias ls='ls -lat --color=always'
 alias cddialler='cd /var/workspace/DiallerControls'
 
-# Maven Commands
-alias mvnce='mvnce.bat'
-alias mvncs='mvncs.bat'
-alias mvnct='mvnct.bat'
-alias mvnp='mvnp.bat'
-alias mvncsd='mvncsd.bat'
-alais mvncd='mvncd.bat'
-alias mvncc='mvncc.bat'
-alias mvncd='mvncd.bat'
-alias mvncp='mvncp.bat'
-alias mvnp='mvnp.bat'
-alias mvnf='mvnf.bat'
-
 # Shopt
 shopt -s cdspell #allow incorrect directory names to be corrected
 shopt -s checkwinsize #make sure terminals wrap lines correctly after resizing them
@@ -102,4 +89,23 @@ alias gx='gitx --all'
 alias got='git '
 alias get='git '
 
+alias exit='logout'
+
+# Maven Commands
+alias mvnce='mvnce.bat'
+alias mvncs='mvncs.bat'
+alias mvnct='mvnct.bat'
+alias mvnp='mvnp.bat'
+alias mvncsd='mvncsd.bat'
+alias mvncd='mvncd.bat'
+alias mvncc='mvncc.bat'
+alias mvncd='mvncd.bat'
+alias mvncp='mvncp.bat'
+alias mvnp='mvnp.bat'
+alias mvnf='mvnf.bat'
+
+echo $SHELL
+# Display welcome message 
+echo -e "${COLOR_GREEN}Welcome $USER Cygwin, Almost a linux shell"
+echo `date`
 cd 'C:\workspaces\james.morgan'
