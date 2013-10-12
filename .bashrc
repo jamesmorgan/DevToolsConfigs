@@ -15,10 +15,6 @@ export PATH=$JAVA_HOME/bin:$PATH
 ## Komodo
 export PATH="/home/jimbob/komodo/bin:$PATH"
 
-## Additions to completion 
-bind "set completion-ignore-case on"
-bind "set show-all-if-ambiguous on"
-
 ## General Utils
 alias grep='grep --color'                     # show differences in colour
 alias egrep='egrep --color=auto'              # show differences in colour
