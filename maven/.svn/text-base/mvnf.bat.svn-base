@@ -1,1 +1,0 @@
-mvn -Pflex generate-resources

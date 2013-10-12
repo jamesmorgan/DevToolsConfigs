@@ -1,26 +1,18 @@
 [user]
-	name = James Morgan
-	email = james.morgan.e@googlemail.com
-[github]
-	user = jamesemorgan
-	token = 0dddfdf6f7052b81bb67485b60f7c6bb
-[core]
-	excludesfile = c:/Users/James Edward Morgan/.gitignore
-	autocrlf = input
+        name = James Morgan
+        email = james.morgan.e@googlemail.com
+[credential]
+        helper = cache --timeout=3600
 [push]
-	default = current
+        default = simple
+[core]
+##	excludesfile = ~/.gitignore ## Point to your gitignore file
+#	autocrlf = input
 [alias]
-	co = checkout
-	ci = commit
-	st = status
-	br = branch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	type = cat-file -t
-	dump = cat-file -p
-	gl = log
 [color]
 	ui = true
-    diff = true
+	diff = true
 	branch = true
 	status = true
-	interactive = true
+	interactive = true                          

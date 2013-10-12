@@ -1,1 +1,0 @@
-mvn -Psandbox,flex jetty:run
