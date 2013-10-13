@@ -1,0 +1,14 @@
+sudo apt-get purge gedit
+sudo apt-get purge gedit-common
+sudo apt-get install gedit-common/raring
+sudo apt-get install gedit/raring
+sudo apt-get install gedit-plugins/raring
+
+## Installing advanced auto complete
+https://github.com/nagaozen/gedit-plugin-codecompletion/
+
+## How to install local plugins
+https://help.gnome.org/users/gedit/stable/gedit-plugins-install.html.en
+
+## Installing JSLint - NOT WORKING
+http://j4mie.org/blog/javascript-syntax-checking-from-gedit/
