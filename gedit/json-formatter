@@ -1,0 +1,28 @@
+#!/usr/bin/python2.7
+# [Gedit Tool]
+# Name=JSON Format
+# Shortcut=<Primary><Alt>f
+# Applicability=all
+# Output=output-panel
+# Input=nothing
+# Save-files=nothing
+
+# [Gedit Tool]
+# Name=JSON Format
+# Languages=json
+# Applicability=all
+# Output=replace-document
+# Input=document
+# Save-files=nothing
+
+from __future__ import print_function
+import sys
+import json
+with sys.stdin as f:
+    contents = f.read()
+try:
+    print(json.dumps(json.loads(contents), indent=2, sort_keys=True))
+except Exception as error:
+    print(contents)
+    print(error.message, file=sys.stderr)
+    sys.exit()

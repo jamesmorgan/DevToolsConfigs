@@ -1,0 +1,24 @@
+#! /usr/bin/env python
+# [Gedit Tool]
+# Name=XML Format
+# Shortcut=<Primary><Alt>x
+# Applicability=all
+# Output=output-panel
+# Input=nothing
+# Save-files=nothing
+# sudo apt-get install python-lxml
+ 
+import sys
+import lxml.etree as etree
+import traceback
+ 
+result = ''
+for line in sys.stdin:
+  result += line
+try:
+  x = etree.fromstring(result)
+  result = etree.tostring(x, pretty_print=True)
+except:
+  etype, evalue, etraceback = sys.exc_info()
+  traceback.print_exception(etype, evalue, etraceback, file=sys.stderr)
+print result

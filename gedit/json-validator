@@ -1,0 +1,28 @@
+#!/usr/bin/python2.7
+# [Gedit Tool]
+# Name=JSON Validate
+# Shortcut=<Primary><Alt>v
+# Applicability=all
+# Output=output-panel
+# Input=nothing
+# Save-files=nothing
+
+# [Gedit Tool]
+# Name=JSON Validate
+# Shortcut=<Primary><Alt>v
+# Languages=json
+# Applicability=all
+# Output=output-panel
+# Input=selection-document
+# Save-files=nothing
+
+from __future__ import print_function
+import sys
+import json
+with sys.stdin as f:
+    contents = f.read()
+try:
+    json.loads(contents)
+    print("JSON is valid.")
+except Exception as error:
+    print(error.message, file=sys.stderr)
