@@ -1,0 +1,14 @@
+
+" Set Spell Checking and bind to keys
+" http://yavin4.anshul.info/2006/05/18/spell-check-in-vim-7/
+
+" F6 KEY turns spell checking ON
+map <F6> <Esc>:setlocal spell spelllang=en_gb<CR> 
+" F7 KEY turns spell checking OFF
+map <F7> <Esc>:setlocal nospell<CR>
+
+" Various Tweaks
+set ignorecase         " Do case insensitive matching
+set smartcase          " Do smart case matching
+set incsearch          " Incremental search
+
