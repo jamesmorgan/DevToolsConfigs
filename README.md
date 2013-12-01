@@ -15,3 +15,9 @@ Inside the file
 This should load the vimrc.local file located at
 
 	/etc/vim/vimrc.local
+
+#### Subversion
+
+Tweaks for default APT subversion install
+
+	~/home/jimbob/subversion
