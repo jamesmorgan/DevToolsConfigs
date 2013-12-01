@@ -20,4 +20,4 @@ This should load the vimrc.local file located at
 
 Tweaks for default APT subversion install
 
-	~/home/jimbob/subversion
+	~/.subversion
