@@ -6,8 +6,8 @@
 [push]
         default = simple
 [core]
-##	excludesfile = ~/.gitignore ## Point to your gitignore file
-#	autocrlf = input
+	excludesfile = ~/.gitignore ## Point to your gitignore file
+	autocrlf = input
 [alias]
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [color]
