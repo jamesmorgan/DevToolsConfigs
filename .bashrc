@@ -26,9 +26,22 @@ alias gs='git status'
 alias gd='git diff'
 alias gaa='git add -A'
 
+## Local workspace Helpers
+alias cdwksp='cd /mnt/750-SpinPoint-A/Dropbox/workspace/';
+alias cdwksp-py='cd /mnt/750-SpinPoint-A/Dropbox/workspace-python';
+alias cdwksp-sh='cd /mnt/750-SpinPoint-A/Dropbox/workspace-shell';
+alias cdwksp-gnome='cd /mnt/750-SpinPoint-A/Dropbox/workspace-gnome';
+alias cdwksp-java='cd /mnt/750-SpinPoint-A/Dropbox/workspace-sts';
+alias cdwksp-android='cd /mnt/750-SpinPoint-A/Dropbox/workspace-android';
+
+## Local Directory Helpers
+alias cddropbox='cd /mnt/750-SpinPoint-A/Dropbox/'
+alias cddownloads='cd /mnt/3rd-Sata/torrents/finished\ downloads/'
+
 # Maven helpers
 alias mvnct='mvn -U clean test'
 alias mvncjr='mvn -U clean jetty:run'
+alias mvntr='mvn -U clean tomcat7:run'
 alias mvnctp='mvn -U clean package'
 alias mvncee='mvn -U clean eclipse:eclipse -DdownloadSources=true'
 alias mvncd='mvnDebug -U clean jetty:run'
