@@ -33,6 +33,13 @@ alias cdwksp-sh='cd /mnt/750-SpinPoint-A/Dropbox/workspace-shell';
 alias cdwksp-gnome='cd /mnt/750-SpinPoint-A/Dropbox/workspace-gnome';
 alias cdwksp-java='cd /mnt/750-SpinPoint-A/Dropbox/workspace-sts';
 alias cdwksp-android='cd /mnt/750-SpinPoint-A/Dropbox/workspace-android';
+alias cdwksp-js='cd /mnt/750-SpinPoint-A/Dropbox/workspace-js';
+
+## Other Folders
+alias dropbox='cd /mnt/750-SpinPoint-A/Dropbox';
+alias finished-downloads='cd /mnt/3rd-Sata/torrents/finished\ downloads';
+alias pictures='cd /mnt/750-SpinPoint-A/Dropbox/Photos';
+
 
 ## Local Directory Helpers
 alias cddropbox='cd /mnt/750-SpinPoint-A/Dropbox/'
