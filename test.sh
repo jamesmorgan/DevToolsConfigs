@@ -22,7 +22,7 @@ function valid {
     echo "INSTALL_TYPE $INSTALL_TYPE"
 
     # Check if correct type
-    if [ "$INSTALL_TYPE" != $OSX ] || [ "$INSTALL_TYPE" != $LINUX ]
+    if [[ "$INSTALL_TYPE" != "$OSX" && "$INSTALL_TYPE" != "$LINUX" ]]
     then
         echo "failed 2"
         usage
@@ -37,16 +37,20 @@ function install {
     cp .gitconfig .gitignore_global .inputrc $HOME/.
     echo "Copying config files done"
 
-    cp vimrc.local /etc/vim/vimrc.local
-    echo "Copying VIMRC local files"
 
     # Switch installer
     case "$INSTALL_TYPE" in
-    $OSX) echo "Found OSX switch"
+    "$OSX")
+        echo "Running $OSX install"
         cp mac-osx/.bash_profile $HOME/.
         source $HOME/.bash_profile
         ;;
-    $LINUX) echo  "Found LINUX switch"
+    "$LINUX")
+        echo  "Running $LINUX install"
+
+        cp vimrc.local /etc/vim/vimrc.local
+        echo "Copying VIMRC local files"
+
         cp .bashrc $HOME/.
         source $HOME/.bashrc
         ;;
