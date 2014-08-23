@@ -1,9 +1,8 @@
 
-## True-strap configs
-export vm_mem=6144
-export init_role=devvm_headless
-export init_env=dev
-export init_repoprivkeyfile=github.pem
+# Set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
 
 ## General Utils
 alias grep='grep --color'                     # show differences in colour
@@ -11,6 +10,31 @@ alias egrep='egrep --color=auto'              # show differences in colour
 alias fgrep='fgrep --color=auto'              # show differences in colour
 alias ls='ls -lat' # enhancement
 alias ll='ls'
+
+##################
+## PATH Helpers ##
+##################
+
+## Set Maven Opts
+export MAVEN_OPTS='-Xms1024m -Xmx2048m -XX:MaxPermSize=256m'
+
+## Set up Java
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+
+## Set Scala
+export SCALA_HOME=/Users/jamesmorgan/Documents/DeveloperTools/scala
+
+export PATH=$SCALA_HOME/bin:$PATH
+
+## Set Play Framework
+# brew install typesafe-activator
+
+## Set Node
+# brew install node
+
+#################
+## Git Helpers ##
+#################
 
 ## Git helpers
 alias gs='git status'
@@ -36,7 +60,36 @@ alias git-nf=git_new_feature
 
 alias git-prune-merged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
-alias cdwksp='cd /Users/jamesmorgan/workspace/';
+#######################
+## Workspace Helpers ##
+#######################
+
+# Dropbox Home
+DROPBOX_HOME=/Users/jamesmorgan/Dropbox
+
+## Local workspace Helpers
+alias cdwksp='cd $DROPBOX_HOME/workspace';
+alias cdwksp-py='cd $DROPBOX_HOME/workspace-python';
+alias cdwksp-sh='cd $DROPBOX_HOME/workspace-shell';
+alias cdwksp-gnome='cd $DROPBOX_HOME/workspace-gnome';
+alias cdwksp-java='cd $DROPBOX_HOME/workspace-sts';
+alias cdwksp-android='cd $DROPBOX_HOME/workspace-android';
+alias cdwksp-js='cd $DROPBOX_HOME/workspace-js';
+alias cdwksp-work='cd $DROPBOX_HOME/workspace-work'
+
+####################
+## MSM VM Helpers ##
+####################
+
+## MSM True-strap configs
+export vm_mem=6144
+export init_role=devvm_headless
+export init_env=dev
+export init_repoprivkeyfile=github.pem
+
+###################
+## MAVEN Helpers ##
+###################
 
 # Maven helpers
 alias mvnct='mvn -U clean test'
@@ -50,8 +103,9 @@ alias mvncv='mvn clean verify'
 alias dirtyInstall='mvn clean install -U -DskipTests -DskipITs -Dfindbugs.skip=true -Dpmd.skip=true -Dcheckstyle.skip=true'
 alias mvnciu='mvn clean install -U -DskipTests'
 
-export MAVEN_OPTS='-Xms1024m -Xmx2048m -XX:MaxPermSize=256m'
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+####################
+## PROMPT Helpers ##
+####################
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
