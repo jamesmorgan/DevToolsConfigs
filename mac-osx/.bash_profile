@@ -58,8 +58,21 @@ git_new_feature() {
     echo "Created Branch $1";
 }
 
-## alias git-nf="git checkout master; git ull; git pull; git push;"
+
+git_hubflow_new_feature() {
+    if [[ $# -ne 1 ]]; then
+        echo "Error, USAGE: git hf feature start BRANCH_NAME"
+        return
+    fi
+    git hf feature start $1;
+    echo "Created Branch $1";
+}
+
+# Git new feature using forks.
 alias git-nf=git_new_feature
+
+# Git new feature using hubflow
+alias git-hf-nf=git_hubflow_new_feature
 
 alias git-prune-merged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
@@ -73,12 +86,18 @@ DROPBOX_HOME=/Users/jamesmorgan/Dropbox
 ## Local workspace Helpers
 alias cdwksp='cd $DROPBOX_HOME/workspace';
 alias cdwksp-py='cd $DROPBOX_HOME/workspace-python';
-alias cdwksp-sh='cd $DROPBOX_HOME/workspace-shell';
 alias cdwksp-gnome='cd $DROPBOX_HOME/workspace-gnome';
 alias cdwksp-java='cd $DROPBOX_HOME/workspace-sts';
 alias cdwksp-android='cd $DROPBOX_HOME/workspace-android';
 alias cdwksp-js='cd $DROPBOX_HOME/workspace-js';
 alias cdwksp-work='cd $DROPBOX_HOME/workspace-work'
+
+WORKSPACE_SHELL=$DROPBOX_HOME/workspace-shell
+alias cdwksp-sh='cd $WORKSPACE_SHELL';
+
+## Show/Hide hidden files ##
+alias show-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/ShowHiddenFiles.sh'
+alias hide-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/HideHiddenFiles.sh'
 
 ####################
 ## MSM VM Helpers ##
