@@ -99,7 +99,9 @@ alias cdwksp-gnome='cd $DROPBOX_HOME/workspace-gnome';
 alias cdwksp-java='cd $DROPBOX_HOME/workspace-sts';
 alias cdwksp-android='cd $DROPBOX_HOME/workspace-android';
 alias cdwksp-js='cd $DROPBOX_HOME/workspace-js';
-alias cdwksp-work='cd $DROPBOX_HOME/workspace-work'
+
+# Moving workspace-work out of dropdox to reduce DropBox CPU usage
+alias cdwksp-work='cd /Users/jamesmorgan/Documents/workspace-work/'
 
 WORKSPACE_SHELL=$DROPBOX_HOME/workspace-shell
 alias cdwksp-sh='cd $WORKSPACE_SHELL';
