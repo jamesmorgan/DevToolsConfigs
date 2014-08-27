@@ -32,6 +32,9 @@ export PATH=$SCALA_HOME/bin:$PATH
 ## Set Node
 # brew install node
 
+## Set up HubFlow
+# brew install hubflow
+
 # Install sublime on command line
 # ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
