@@ -26,8 +26,12 @@ export SCALA_HOME=/Users/jamesmorgan/Documents/DeveloperTools/scala
 
 export PATH=$SCALA_HOME/bin:$PATH
 
-## Set Play Framework
+## Set new TypeSafe Activator -> was called Play Framework
 # brew install typesafe-activator
+
+# Set PLAY2_HOME and add to path
+export PLAY2_HOME=/Users/jamesmorgan/Documents/DeveloperTools/play2
+export PATH=$PLAY2_HOME/bin:$PATH
 
 ## Set Node
 # brew install node
