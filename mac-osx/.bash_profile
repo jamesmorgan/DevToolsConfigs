@@ -23,7 +23,6 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
 ## Set Scala
 export SCALA_HOME=/Users/jamesmorgan/Documents/DeveloperTools/scala
-
 export PATH=$SCALA_HOME/bin:$PATH
 
 ## Set new TypeSafe Activator -> was called Play Framework
@@ -31,13 +30,16 @@ export PATH=$SCALA_HOME/bin:$PATH
 
 # Set PLAY2_HOME and add to path
 export PLAY2_HOME=/Users/jamesmorgan/Documents/DeveloperTools/play2
-export PATH=$PLAY2_HOME/bin:$PATH
+export PATH=$PLAY2_HOME/:$PATH
 
 ## Set Node
 # brew install node
 
 ## Set up HubFlow
 # brew install hubflow
+
+## Install mongodb
+# brew install mongodb
 
 # Install sublime on command line
 # ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
