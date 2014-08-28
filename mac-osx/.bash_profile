@@ -32,14 +32,20 @@ export PATH=$SCALA_HOME/bin:$PATH
 export PLAY2_HOME=/Users/jamesmorgan/Documents/DeveloperTools/play2
 export PATH=$PLAY2_HOME/:$PATH
 
-## Set Node
+## Install Node
 # brew install node
 
-## Set up HubFlow
+## Install HubFlow
 # brew install hubflow
 
 ## Install mongodb
 # brew install mongodb
+
+## Install SBT
+# brew install sbt
+
+## Install Maven
+# brew install maven
 
 # Install sublime on command line
 # ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
