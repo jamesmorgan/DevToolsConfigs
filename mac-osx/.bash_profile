@@ -47,6 +47,11 @@ export PATH=$PLAY2_HOME/:$PATH
 ## Install Maven
 # brew install maven
 
+## bash completion from brew
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # Install sublime on command line
 # ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
