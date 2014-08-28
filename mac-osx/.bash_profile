@@ -47,6 +47,9 @@ export PATH=$PLAY2_HOME/:$PATH
 ## Install Maven
 # brew install maven
 
+## Install brew bash completion
+# brew install bash-completion
+
 ## bash completion from brew
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
