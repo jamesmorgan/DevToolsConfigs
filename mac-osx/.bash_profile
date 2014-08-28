@@ -32,6 +32,9 @@ export PATH=$SCALA_HOME/bin:$PATH
 export PLAY2_HOME=/Users/jamesmorgan/Documents/DeveloperTools/play2
 export PATH=$PLAY2_HOME/:$PATH
 
+# Sey /usr/local/bin to PATH to ensure brews are picked up
+export PATH=/usr/local/bin/:$PATH
+
 ## Install Node
 # brew install node
 
@@ -49,6 +52,9 @@ export PATH=$PLAY2_HOME/:$PATH
 
 ## Install brew bash completion
 # brew install bash-completion
+
+## Install git
+# brew install git
 
 ## bash completion from brew
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
