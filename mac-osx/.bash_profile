@@ -8,7 +8,7 @@ fi
 alias grep='grep --color'                     # show differences in colour
 alias egrep='egrep --color=auto'              # show differences in colour
 alias fgrep='fgrep --color=auto'              # show differences in colour
-alias ls='ls -lat' # enhancement
+alias ls='ls -lath' # enhancement
 alias ll='ls'
 
 ##################
