@@ -126,6 +126,9 @@ alias cdwksp-work='cd /Users/jamesmorgan/Documents/workspace-work/'
 WORKSPACE_SHELL=$DROPBOX_HOME/workspace-shell
 alias cdwksp-sh='cd $WORKSPACE_SHELL';
 
+alias adstream='cdwksp-work; cd adstream;'
+alias msm='cdwksp-work; cd msm'
+
 ## Show/Hide hidden files ##
 alias show-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/ShowHiddenFiles.sh'
 alias hide-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/HideHiddenFiles.sh'
