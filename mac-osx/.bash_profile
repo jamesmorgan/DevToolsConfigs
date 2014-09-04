@@ -18,6 +18,9 @@ alias ll='ls'
 ## Set Maven Opts
 export MAVEN_OPTS='-Xms1024m -Xmx2048m -XX:MaxPermSize=256m'
 
+## Set SBT Opts
+export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M  -Duser.timezone=GMT"
+
 ## Set up Java
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
