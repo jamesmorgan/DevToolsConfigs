@@ -108,6 +108,8 @@ alias git-hf-nf=git_hubflow_new_feature
 
 alias git-prune-merged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
+alias proc='ps -ef | grep $1'
+
 #######################
 ## Workspace Helpers ##
 #######################
