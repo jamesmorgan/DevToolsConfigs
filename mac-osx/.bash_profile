@@ -133,6 +133,7 @@ alias cdwksp-sh='cd $WORKSPACE_SHELL';
 
 alias adstream='cdwksp-work; cd adstream;'
 alias msm='cdwksp-work; cd msm'
+alias tsm='cdwksp-work; cd tsm'
 
 ## Show/Hide hidden files ##
 alias show-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/ShowHiddenFiles.sh'
