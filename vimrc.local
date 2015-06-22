@@ -11,4 +11,4 @@ map <F7> <Esc>:setlocal nospell<CR>
 set ignorecase         " Do case insensitive matching
 set smartcase          " Do smart case matching
 set incsearch          " Incremental search
-
+set number	       " Turn on line numbers
