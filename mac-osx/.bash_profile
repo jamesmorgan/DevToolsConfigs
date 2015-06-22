@@ -136,6 +136,10 @@ alias msm='cdwksp-work; cd msm'
 alias tsm='cdwksp-work; cd tsm'
 alias orcats='cdwksp-work; cd orcats-poc'
 
+# Work tooling
+alias neo4j-start='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j start'
+alias neo4j-stop='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j stop'
+
 ## Show/Hide hidden files ##
 alias show-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/ShowHiddenFiles.sh'
 alias hide-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/HideHiddenFiles.sh'
