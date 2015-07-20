@@ -141,6 +141,10 @@ alias neo4j-start='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j start'
 alias neo4j-stop='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j stop'
 alias neo4j-status='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j status; echo 'http://localhost:7474/''
 
+alias elastic-start='cdwksp-work; ./elasticsearch/elasticsearch-1.7.0/bin/elasticsearch start';
+alias elastic-stop='cdwksp-work; ./elasticsearch/elasticsearch-1.7.0/bin/elasticsearch stop';
+alias elastic-status='cdwksp-work; ./elasticsearch/elasticsearch-1.7.0/bin/elasticsearch status';
+
 ## Show/Hide hidden files ##
 alias show-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/ShowHiddenFiles.sh'
 alias hide-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/HideHiddenFiles.sh'
