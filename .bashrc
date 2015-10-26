@@ -15,6 +15,10 @@ export PATH=$JAVA_HOME/bin:$PATH
 ## Komodo
 export PATH="/home/jimbob/komodo/bin:$PATH"
 
+
+# Plex
+export LD_LIBRARY_PATH=/usr/lib/plexmediaserver
+
 ## General Utils
 alias grep='grep --color'                     # show differences in colour
 alias egrep='egrep --color=auto'              # show differences in colour

@@ -135,6 +135,7 @@ alias adstream='cdwksp-work; cd adstream;'
 alias msm='cdwksp-work; cd msm'
 alias tsm='cdwksp-work; cd tsm'
 alias orcats='cdwksp-work; cd orcats-poc'
+alias laterooms='cdwksp-work; cd laterooms'
 
 # Work tooling
 alias neo4j-start='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j start'
@@ -142,6 +143,9 @@ alias neo4j-stop='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j stop'
 alias neo4j-status='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j status; echo 'http://localhost:7474/''
 
 alias elastic-start='cdwksp-work; ./elasticsearch/elasticsearch-1.7.0/bin/elasticsearch start';
+
+alias kafka-start='cdwksp-work; ./kafka/kafka_2.9.2-0.8.1.1/bin/kafka-server-start.sh ./kafka/kafka_2.9.2-0.8.1.1/config/server.properties';
+alias zookeeper-start='cdwksp-work; ./kafka/kafka_2.9.2-0.8.1.1/bin/zookeeper-server-start.sh ./kafka/kafka_2.9.2-0.8.1.1/config/zookeeper.properties';
 
 ## Show/Hide hidden files ##
 alias show-hidden-files='$WORKSPACE_SHELL/DevToolsConfigs/mac-osx/ShowHiddenFiles.sh'
