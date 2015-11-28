@@ -136,6 +136,8 @@ alias msm='cdwksp-work; cd msm'
 alias tsm='cdwksp-work; cd tsm'
 alias orcats='cdwksp-work; cd orcats-poc'
 alias laterooms='cdwksp-work; cd laterooms'
+alias extranet_ui_run='grunt run --milestone=7 --dev'
+alias extranet_ui_test='grunt test --useApi'
 
 # Work tooling
 alias neo4j-start='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j start'
