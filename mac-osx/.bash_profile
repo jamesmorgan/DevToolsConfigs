@@ -15,6 +15,11 @@ alias ll='ls'
 ## PATH Helpers ##
 ##################
 
+## Set Android Platform Tools
+export ANDROID_HOME=/Users/jamesmorgan/Library/Android/sdk
+export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME/platform-tools
+export PATH=$ANDROID_PLATFORM_TOOLS:$PATH
+
 ## Set Maven Opts
 export MAVEN_OPTS='-Xms1024m -Xmx2048m -XX:MaxPermSize=256m'
 
