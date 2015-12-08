@@ -143,6 +143,9 @@ alias orcats='cdwksp-work; cd orcats-poc'
 alias laterooms='cdwksp-work; cd laterooms'
 alias extranet_ui_run='grunt run --milestone=7 --dev'
 alias extranet_ui_test='grunt test --useApi'
+alias extranet_ui_test_force='grunt test --force --useApi'
+alias extranet_xml_validate_HotelRatePlanNotifRQ='xmllint --noout --schema ./test/resources/HTNG_2014B_Artifacts_8/opentravel/OTA_HotelRatePlanNotifRQ.xsd $1'
+alias extranet_xml_validate_HotelAvailNotifRQ='xmllint --noout --schema ./test/resources/HTNG_2014B_Artifacts_8/opentravel/OTA_HotelAvailNotifRQ.xsd $1'
 
 # Work tooling
 alias neo4j-start='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j start'
