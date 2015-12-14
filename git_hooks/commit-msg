@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Based on - https://gist.github.com/pgilad/5d7e4db725a906bd7aa7
+# copy the file commit-msg to .git/hooks/commit-msg
+# make sure your delete the sample file .git/hooks/commit-msg.sample
+# Make commit msg executable. chmod +x .git/hooks/commit-msg
+# Edit commit-msg to better fit your development branch, commit regex and error message
+
+# set this to your active development branch
+develop_branch="develop"
+current_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+# only check commit messages on feature branches
+[ "$current_branch" == "$develop_branch" ] && exit 0
+
+# regex to validate in commit msg
+commit_regex='(EX-[0-9]+|merge)'
+error_msg="Aborting commit. Your commit message is missing either a Leankit Issue ('EX-1111') or 'Merge'"
+
+if ! grep -iqE "$commit_regex" "$1"; then
+    echo "$error_msg" >&2
+    exit 1
+fi
