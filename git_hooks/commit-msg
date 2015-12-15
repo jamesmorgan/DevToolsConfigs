@@ -17,7 +17,9 @@ current_branch="$(git rev-parse --abbrev-ref HEAD)"
 commit_regex='(EX-[0-9]+|merge)'
 error_msg="Aborting commit. Your commit message is missing either a Leankit Issue ('EX-1111') or 'Merge'"
 
+RED='\033[0;31m
+
 if ! grep -iqE "$commit_regex" "$1"; then
-    echo "$error_msg" >&2
+    printf "${RED} $error_msg\n" >&2
     exit 1
 fi
