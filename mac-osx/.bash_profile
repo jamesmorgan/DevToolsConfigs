@@ -4,6 +4,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# NVM default settings
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+nvm alias default v0.12.9
+
 ## General Utils
 alias grep='grep --color'                     # show differences in colour
 alias egrep='egrep --color=auto'              # show differences in colour
@@ -141,11 +146,11 @@ alias msm='cdwksp-work; cd msm'
 alias tsm='cdwksp-work; cd tsm'
 alias orcats='cdwksp-work; cd orcats-poc'
 alias laterooms='cdwksp-work; cd laterooms'
-alias extranet_ui_run='grunt run --milestone=7 --dev'
-alias extranet_ui_test='grunt test --useApi'
-alias extranet_ui_test_force='grunt test --force --useApi'
-alias extranet_xml_validate_HotelRatePlanNotifRQ='xmllint --noout --schema ./test/resources/HTNG_2014B_Artifacts_8/opentravel/OTA_HotelRatePlanNotifRQ.xsd $1'
-alias extranet_xml_validate_HotelAvailNotifRQ='xmllint --noout --schema ./test/resources/HTNG_2014B_Artifacts_8/opentravel/OTA_HotelAvailNotifRQ.xsd $1'
+alias extui_run='grunt run --milestone=10 --dev'
+alias extui_test='grunt test --useApi'
+alias extui_test_force='grunt test --force --useApi'
+alias ext_xml_validate_HotelRatePlanNotifRQ='xmllint --noout --schema ./test/resources/HTNG_2014B_Artifacts_8/opentravel/OTA_HotelRatePlanNotifRQ.xsd $1'
+alias ext_xml_validate_HotelAvailNotifRQ='xmllint --noout --schema ./test/resources/HTNG_2014B_Artifacts_8/opentravel/OTA_HotelAvailNotifRQ.xsd $1'
 
 # Work tooling
 alias neo4j-start='cdwksp-work; ./neo4j/neo4j-community-2.2.2/bin/neo4j start'
