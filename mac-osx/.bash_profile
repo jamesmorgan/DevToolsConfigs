@@ -7,7 +7,7 @@ fi
 # NVM default settings
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-nvm alias default v0.12.9
+nvm alias default v4.4.2
 
 ## General Utils
 alias grep='grep --color'                     # show differences in colour
@@ -146,9 +146,10 @@ alias msm='cdwksp-work; cd msm'
 alias tsm='cdwksp-work; cd tsm'
 alias orcats='cdwksp-work; cd orcats-poc'
 alias laterooms='cdwksp-work; cd laterooms'
-alias extui_run='grunt run --milestone=10 --dev'
-alias extui_test='grunt test --useApi'
-alias extui_test_force='grunt test --force --useApi'
+alias extui_run='grunt run --milestone=10 --dev=true --quick=true'
+alias extui_test='grunt test --useApi=true --dev=true'
+alias extui_test_10='grunt test --useApi=true --dev=true --milestone=10'
+alias extui_test_force='grunt test --force=true --useApi --dev=true --quick=true'
 alias ext_xml_validate_HotelRatePlanNotifRQ='xmllint --noout --schema ./test/resources/HTNG_2014B_Artifacts_8/opentravel/OTA_HotelRatePlanNotifRQ.xsd $1'
 alias ext_xml_validate_HotelAvailNotifRQ='xmllint --noout --schema ./test/resources/HTNG_2014B_Artifacts_8/opentravel/OTA_HotelAvailNotifRQ.xsd $1'
 
