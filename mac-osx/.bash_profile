@@ -7,7 +7,7 @@ fi
 # NVM default settings
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-nvm alias default v4.4.2
+nvm alias default v4.4.7
 
 ## General Utils
 alias grep='grep --color'                     # show differences in colour
