@@ -35,15 +35,15 @@ export SBT_OPTS="-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -X
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 ## Set Scala
-export SCALA_HOME=/Users/jamesmorgan/Documents/DeveloperTools/scala
-export PATH=$SCALA_HOME/bin:$PATH
+# export SCALA_HOME=/Users/jamesmorgan/Documents/DeveloperTools/scala
+# export PATH=$SCALA_HOME/bin:$PATH
 
 ## Set new TypeSafe Activator -> was called Play Framework
 # brew install typesafe-activator
 
 # Set PLAY2_HOME and add to path
-export PLAY2_HOME=/Users/jamesmorgan/Documents/DeveloperTools/play2
-export PATH=$PLAY2_HOME/:$PATH
+# export PLAY2_HOME=/Users/jamesmorgan/Documents/DeveloperTools/play2
+# export PATH=$PLAY2_HOME/:$PATH
 
 # Sey /usr/local/bin to PATH to ensure brews are picked up
 export PATH=/usr/local/bin/:$PATH
@@ -146,8 +146,9 @@ alias msm='cdwksp-work; cd msm'
 alias tsm='cdwksp-work; cd tsm'
 alias orcats='cdwksp-work; cd orcats-poc'
 alias laterooms='cdwksp-work; cd laterooms'
-alias coop='cdwksp-work; cd equalexperts'
+alias coop='cdwksp-work; cd coop'
 alias coop-vm='coop; cd fnc-development-environment; ssh-add ~/.ssh/id_rsa; vagrant up'
+alias goeuro='cdwksp-work; cd goeuro;'
 alias extui_run='grunt run --milestone=10 --dev=true --quick=true'
 alias extui_test='grunt test --useApi=true --dev=true'
 alias extui_test_10='grunt test --useApi=true --dev=true --milestone=10'
