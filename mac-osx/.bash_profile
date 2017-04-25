@@ -1,3 +1,8 @@
+# show curreny DIR in bash shell
+if [ $ITERM_SESSION_ID ]; then
+  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+fi
+
 
 # Set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -7,7 +12,7 @@ fi
 # NVM default settings
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-nvm alias default v4.4.7
+nvm alias default v7.7.4
 
 ## General Utils
 alias grep='grep --color'                     # show differences in colour
@@ -29,7 +34,7 @@ export PATH=$ANDROID_PLATFORM_TOOLS:$PATH
 export MAVEN_OPTS='-Xms1024m -Xmx2048m -XX:MaxPermSize=256m'
 
 ## Set SBT Opts
-export SBT_OPTS="-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M  -Duser.timezone=GMT"
+# export SBT_OPTS="-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M  -Duser.timezone=GMT"
 
 ## Set up Java
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
@@ -82,11 +87,16 @@ fi
 #################
 
 ## Git helpers
+alias gco='git checkout'
+alias gpr='git pull --rebase'
+alias ga='git add'
 alias gs='git status'
+alias gp='git push'
 alias gd='git diff'
 alias gaa='git add -A'
 alias g-no-merged='git branch --no-merged'
 alias g-merged='git branch --merged'
+alias gcm='git commit -m'
 
 git_new_feature() {
     if [[ $# -ne 1 ]]; then
@@ -120,6 +130,8 @@ alias git-prune-merged='git branch --merged | grep -v "\*" | xargs -n 1 git bran
 
 alias proc='ps -ef | grep $1'
 
+alias nethogs='/usr/local/Cellar/nethogs/0.8.5/sbin/nethogs $1'
+
 #######################
 ## Workspace Helpers ##
 #######################
@@ -141,14 +153,23 @@ alias cdwksp-work='cd /Users/jamesmorgan/Documents/workspace-work/'
 WORKSPACE_SHELL=$DROPBOX_HOME/workspace-shell
 alias cdwksp-sh='cd $WORKSPACE_SHELL';
 
+# Cake
 alias adstream='cdwksp-work; cd adstream;'
 alias msm='cdwksp-work; cd msm'
 alias tsm='cdwksp-work; cd tsm'
 alias orcats='cdwksp-work; cd orcats-poc'
-alias laterooms='cdwksp-work; cd laterooms'
+
+# COOP
 alias coop='cdwksp-work; cd coop'
 alias coop-vm='coop; cd fnc-development-environment; ssh-add ~/.ssh/id_rsa; vagrant up'
+
+# GOEURO
 alias goeuro='cdwksp-work; cd goeuro;'
+alias bp_run='docker run -it -p8081:8080 --rm eu.gcr.io/goeuro-dev/booking-providers'
+alias sbt_debug='sbt -jvm-debug 9999'
+
+# Laterooms
+alias laterooms='cdwksp-work; cd laterooms'
 alias extui_run='grunt run --milestone=10 --dev=true --quick=true'
 alias extui_test='grunt test --useApi=true --dev=true'
 alias extui_test_10='grunt test --useApi=true --dev=true --milestone=10'
