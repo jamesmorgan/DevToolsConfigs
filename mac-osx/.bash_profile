@@ -207,6 +207,7 @@ export init_repoprivkeyfile=github.pem
 
 # Maven helpers
 alias mvnct='mvn -U clean test'
+alias mvnci='mvn clean install'
 alias mvncjr='mvn -U clean jetty:run'
 alias mvntr='mvn -U clean tomcat7:run'
 alias mvnctp='mvn -U clean package'

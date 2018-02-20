@@ -2,6 +2,7 @@
 
 LINUX="LINUX"
 OSX="OSX"
+OSX_ZSH="OSX-ZSH"
 INSTALL_TYPE=$1
 
 function usage {
@@ -22,7 +23,7 @@ function valid {
     echo "INSTALL_TYPE $INSTALL_TYPE"
 
     # Check if correct type
-    if [[ "$INSTALL_TYPE" != "$OSX" && "$INSTALL_TYPE" != "$LINUX" ]]
+    if [[ "$INSTALL_TYPE" != "$OSX" && "$INSTALL_TYPE" != "$LINUX" && "$INSTALL_TYPE" != "$OSX_ZSH" ]]
     then
         echo "failed 2"
         usage
@@ -43,6 +44,11 @@ function install {
         echo "Running $OSX install"
         cp mac-osx/.bash_profile $HOME/.
         source $HOME/.bash_profile
+        ;;
+    "$OSX_ZSH")
+        echo "Running $OSX install"
+        cp zsh/.zshrc $HOME/.
+        source $HOME/.zshrc
         ;;
     "$LINUX")
         echo  "Running $LINUX install"
